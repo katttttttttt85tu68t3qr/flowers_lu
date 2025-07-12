@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+:root {
+  --negro: #000;
+  --dorado: #d4af37;
+  --fondo: #111;
+  --texto: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background-color: var(--fondo);
+  color: var(--texto);
+  text-align: center;
+}
+
+header {
+  padding: 50px 20px 20px;
+  background-color: var(--negro);
+  border-bottom: 1px solid var(--dorado);
+}
+
+h1 {
+  color: var(--dorado);
+  font-size: 3em;
+  margin: 0;
+}
+
+header p {
+  color: #ccc;
+  font-size: 1.2em;
+}
+
+.collage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px;
+  gap: 20px;
+}
+
+.collage img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 2px solid var(--dorado);
+  border-radius: 12px;
+}
+
+/* Botones */
+.btn-whatsapp, .btn-instagram {
+  position: fixed;
+  bottom: 20px;
+  padding: 12px 20px;
+  background-color: var(--dorado);
+  color: var(--negro);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 50px;
+  box-shadow: 0 0 10px #000;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.btn-whatsapp {
+  left: 20px;
+}
+
+.btn-instagram {
+  right: 20px;
+}
+
+.btn-whatsapp:hover, .btn-instagram:hover {
+  background-color: #bfa133;
+  color: var(--texto);
+}
